@@ -7,12 +7,12 @@
 ## Executar
 
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hugopbruu-spec/Frostzn-Dex/main/Loader.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hugopbruu-spec/Frostzn-Dex/main/dex.lua"))()
 ```
 
-O carregador instala o script, os metadados e os ícones deste repositório na pasta `FrostznDex` do workspace do executor. Na primeira execução, precisa de acesso a `raw.githubusercontent.com`; nas seguintes, reutiliza arquivos compatíveis do cache. Reexecutar com o painel ativo reabre o Explorer.
+**Um único arquivo Lua.** O `dex.lua` contém o runtime completo, os metadados de classes/reflexão e os bytes dos ícones. O comando baixa esse arquivo e executa o Dex diretamente, sem outro carregador e sem buscar dependências adicionais no repositório. Reexecutar com o painel ativo reabre o Explorer.
 
-**Requisitos:** ambiente de execução Luau no cliente que ofereça `game:HttpGet`, `loadstring`, `readfile`, `writefile` e `makefolder`. O comando não é um LocalScript comum para colocar no Studio. O comportamento varia conforme o ambiente; compatibilidade universal não foi verificada.
+**Requisitos:** ambiente de execução Luau no cliente que ofereça `game:HttpGet`, `loadstring` e permissões para criar a interface. `readfile`, `writefile`, `makefolder` e `getcustomasset` são opcionais para preferências, exportações e ícones personalizados. Sem essas APIs, funções dependentes de disco podem ficar indisponíveis, e o menu usa imagens nativas. O comando não é um LocalScript comum para colocar no Studio. Compatibilidade universal não foi verificada.
 
 ## Ferramentas
 
@@ -76,19 +76,17 @@ Indexação incremental, processamento repartido por quadro, busca cancelável e
 
 A versão 2.0 passou por **23 verificações em uma sessão de Roblox Player**, incluindo indexação, propriedades, pesquisa, rascunhos, câmera, ícones, exportação, encaixes e encerramento. Um modelo de teste exportado passou por **oito verificações independentes de leitura**, incluindo dimensões e referências. Isso não representa auditoria de todos os menus, todos os assets, todos os dispositivos ou de estabilidade indefinida.
 
+A distribuição em `dex.lua` também foi compilada e passou por **sete verificações locais** de conteúdo incorporado, inicialização dos metadados sem filesystem e criação/fallback dos ícones.
+
 ## Arquivos
 
 | Arquivo | Função |
 | --- | --- |
-| `Loader.lua` | Instalação e cache das dependências; ponto de entrada do comando. |
-| `Frostzn_Dex.lua` | Runtime completo derivado da base Dex fornecida. |
-| `API.compact.json` | Metadados de classes usados pelo Explorer e propriedades. |
-| `RMD.prepared.json` | Metadados de reflexão e ícones de classes. |
-| `LauncherAtlas.png` | Sete ícones do menu lateral. |
-| `manifest.json` | Versão, tamanhos e SHA-256 dos arquivos distribuídos. |
+| `dex.lua` | Único script executável: runtime, metadados e atlas incorporados. |
+| `Banner.svg` | Apresentação visual do README; não participa da execução. |
 | `LICENSE` / `NOTICE.md` | Licença original e atribuições. |
 
-O carregador verifica tamanhos, estrutura JSON, assinatura PNG e compilação do runtime. Os hashes do manifesto são fornecidos para conferência externa; o carregador não faz verificação criptográfica. Para atualizar uma sessão aberta, encerre o painel e execute o comando novamente. Seus arquivos salvos e configurações não são apagados pelo instalador.
+Não é necessário baixar o repositório nem instalar uma pasta de dependências. Os ícones personalizados, quando suportados, são gravados localmente a partir dos bytes incorporados ao script. Preferências e exportações continuam em `FrostznDex` no workspace do executor. Para atualizar uma sessão aberta, encerre o painel e execute o comando novamente. O script não apaga suas configurações nem suas exportações.
 
 ## Créditos
 
