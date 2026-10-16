@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="330" viewBox="0 0 1280 330">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1020"/><stop offset="1" stop-color="#211c3d"/></linearGradient><linearGradient id="accent"><stop stop-color="#b39aff"/><stop offset="1" stop-color="#7bd4ee"/></linearGradient></defs>
+<rect width="1280" height="330" rx="24" fill="url(#bg)"/>
+<path d="M885 0V330M1010 0V330M1135 0V330M760 82H1280M760 165H1280M760 248H1280" stroke="#b39aff" opacity=".07"/>
+<rect x="55" y="50" width="92" height="5" rx="2" fill="url(#accent)"/>
+<text x="55" y="103" fill="#b6a1ef" font-family="Segoe UI,Arial,sans-serif" font-size="19" letter-spacing="6">FROSTZN</text>
+<text x="50" y="198" fill="#f3efff" font-family="Segoe UI,Arial,sans-serif" font-size="98" font-weight="700" letter-spacing="-4">DEX</text>
+<text x="58" y="246" fill="#a7b2cb" font-family="Segoe UI,Arial,sans-serif" font-size="22">Explorer · Propriedades · Editor</text>
+<text x="58" y="288" fill="#7c88a5" font-family="Segoe UI,Arial,sans-serif" font-size="15">Interface escura. Janelas flexíveis. Ferramentas de cliente.</text>
+<rect x="720" y="55" width="480" height="235" rx="14" fill="#111729" stroke="#4d456e"/>
+<path d="M720 93H1200" stroke="#3b3656"/>
+<circle cx="744" cy="75" r="4" fill="#fd9ba9"/><circle cx="762" cy="75" r="4" fill="#e8cd8e"/><circle cx="780" cy="75" r="4" fill="#83cec4"/>
+<text x="807" y="80" fill="#b9b6d1" font-family="Segoe UI,Arial,sans-serif" font-size="13">Frostzn Dex</text>
+<rect x="734" y="107" width="150" height="166" rx="7" fill="#1b2135"/>
+<path d="M754 132H820M765 158H848M765 184H836M765 210H850M765 236H815" stroke="#a693df" stroke-width="7" stroke-linecap="round" opacity=".7"/>
+<text x="904" y="139" fill="#a99aef" font-family="Consolas,monospace" font-size="18">local</text><text x="966" y="139" fill="#cbd3e9" font-family="Consolas,monospace" font-size="18">explorer</text>
+<path d="M906 164H1167M906 190H1107M926 216H1145" stroke="#657999" stroke-width="7" stroke-linecap="round" opacity=".6"/>
+<rect x="906" y="242" width="95" height="20" rx="5" fill="#54447c"/><rect x="1010" y="242" width="75" height="20" rx="5" fill="#2c465b"/>
+</svg>

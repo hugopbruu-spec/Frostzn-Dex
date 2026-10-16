@@ -1,0 +1,9 @@
+FrostznDex/
+saved/
+settings.json
+boot.json
+runtime-tests.json
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx

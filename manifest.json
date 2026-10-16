@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "files": [
+    {
+      "name": "API.compact.json",
+      "path": "deps/API.compact.json",
+      "bytes": 2086538,
+      "sha256": "f5f89fc72600c4d9034549e1a12c893571d2aab88dbcbd15226205a7078c9350"
+    },
+    {
+      "name": "RMD.prepared.json",
+      "path": "deps/RMD.prepared.json",
+      "bytes": 140205,
+      "sha256": "ac01262983aad8cb6b42729ea4e7ecca89217b24383592e9d2b62cf5a07e020e"
+    },
+    {
+      "name": "LauncherAtlas.png",
+      "path": "assets/LauncherAtlas.png",
+      "bytes": 12418,
+      "sha256": "251f8256040164b1fe764f9f5923c8de598fe8c874d71d15b5fe6efecb6adcef"
+    },
+    {
+      "name": "Frostzn_Dex.lua",
+      "path": "Frostzn_Dex.lua",
+      "bytes": 500629,
+      "sha256": "a6e5ba917a809321f451f9193b4b7c536e244ed9a342dc95cf5ec1ea79c4885c"
+    }
+  ]
+}
