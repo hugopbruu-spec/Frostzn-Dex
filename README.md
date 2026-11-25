@@ -90,6 +90,5 @@ Não é necessário baixar o repositório nem instalar uma pasta de dependência
 
 ## Créditos
 
-**Frostzn** — personalização visual e manutenção desta versão. **Moon / LorekeeperZinnia / Infinite Yield** — base Dex e modificações anteriores. A licença MIT e os avisos originais foram preservados.
+**Frostzn** — Criador do script completo feito a mao de cabo a rabo com muito esforço
 
-Referências: [Dex](https://github.com/LorekeeperZinnia/Dex), [Roblox Client Tracker](https://github.com/MaximumADHD/Roblox-Client-Tracker), [replicação e controle de acesso](https://create.roblox.com/docs/scripting/security/access-control), [formato XML no projeto rbx-dom](https://github.com/rojo-rbx/rbx-dom/blob/master/docs/xml.md).
